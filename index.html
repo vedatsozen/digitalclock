@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAT UYGULAMASI</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="container">
+
+
+</div>
+
+</body>
+
+<script>
+
+let tarih = new Date();
+
+let saat = tarih.getHours();
+let dakika = tarih.getMinutes();
+let saniye = tarih.getSeconds();
+
+setInterval(reload,1000);
+
+
+
+document.getElementById("container").innerHTML = saat + ":" + dakika + ":" + saniye;
+
+
+function reload() {
+    window.location.reload();
+}
+
+
+</script>
+</html>
